@@ -66,22 +66,26 @@ namespace FieldBrowser
         {
             if (GetBrowserControl().CanGoBack)
                 GetBrowserControl().GoBack();
+            txtAddress.Text = GetBrowserControl().Url.ToString();
         }
 
         private void btnForward_Click(object sender, EventArgs e)
         {
             if(GetBrowserControl().CanGoForward)
                 GetBrowserControl().GoForward();
+            txtAddress.Text = GetBrowserControl().Url.ToString();
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             GetBrowserControl().Reload(WebBrowserRefreshOption.Completely);
+            txtAddress.Text = GetBrowserControl().Url.ToString();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
             GetBrowserControl().Navigate(home);
+            txtAddress.Text = GetBrowserControl().Url.ToString();
         }
 
         private void btnStop_Click(object sender, EventArgs e)
@@ -92,6 +96,7 @@ namespace FieldBrowser
         private void btnOptions_Click(object sender, EventArgs e)
         {
             LoadOptions();
+            txtAddress.Text = "Options";
         }
 
         private void txtAddress_KeyUp(object sender, KeyEventArgs e)
@@ -115,6 +120,10 @@ namespace FieldBrowser
                 newBrowser();
                 GetBrowserControl().Navigate(home);
             }
+            else
+            {
+                txtAddress.Text = GetBrowserControl().Url.ToString();
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -124,7 +133,14 @@ namespace FieldBrowser
             {
                 if (!string.IsNullOrEmpty(pages[i].DocumentTitle) && tabs.TabPages[i].Text != "Options")
                 {
-                    tabs.TabPages[i].Text = pages[i].DocumentTitle;
+                    if (pages[i].DocumentTitle.Length > 30)
+                    {
+                        tabs.TabPages[i].Text = pages[i].DocumentTitle.Substring(0, 30) + "...";
+                    }
+                    else
+                    {
+                        tabs.TabPages[i].Text = pages[i].DocumentTitle;
+                    }
                 }
             }
 
