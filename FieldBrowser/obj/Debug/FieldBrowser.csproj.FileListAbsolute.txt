@@ -1,0 +1,11 @@
+D:\FieldBrowser\FieldBrowser\FieldBrowser\bin\Debug\FieldBrowser.exe.config
+D:\FieldBrowser\FieldBrowser\FieldBrowser\bin\Debug\FieldBrowser.exe
+D:\FieldBrowser\FieldBrowser\FieldBrowser\bin\Debug\FieldBrowser.pdb
+D:\FieldBrowser\FieldBrowser\FieldBrowser\bin\Debug\WebKit.Interop.dll
+D:\FieldBrowser\FieldBrowser\FieldBrowser\bin\Debug\stdole.dll
+D:\FieldBrowser\FieldBrowser\FieldBrowser\obj\Debug\FieldBrowser.csprojResolveAssemblyReference.cache
+D:\FieldBrowser\FieldBrowser\FieldBrowser\obj\Debug\FieldBrowser.FrmMain.resources
+D:\FieldBrowser\FieldBrowser\FieldBrowser\obj\Debug\FieldBrowser.Properties.Resources.resources
+D:\FieldBrowser\FieldBrowser\FieldBrowser\obj\Debug\FieldBrowser.csproj.GenerateResource.Cache
+D:\FieldBrowser\FieldBrowser\FieldBrowser\obj\Debug\FieldBrowser.exe
+D:\FieldBrowser\FieldBrowser\FieldBrowser\obj\Debug\FieldBrowser.pdb
